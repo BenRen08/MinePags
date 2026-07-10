@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>个人网站 - 你的名字</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="name">你的名字</h1>
+      <p id="tagline">简洁的个人网站 / 开发者 · 设计 · 爱好</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>关于我</h2>
+      <p>你好！我叫 <strong>你的名字</strong>，是一名对 Web 开发充满热情的人。这里是一个简易的个人主页，用来介绍我、展示项目与联系方式。</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>技能</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>React / Vue（可选）</li>
+        <li>后端：Node.js / Python（可选）</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>项目</h2>
+      <p>在这里列出你的几个项目：项目名 — 简短描述 — <a href="#">GitHub 链接</a></p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>联系方式</h2>
+      <p>邮箱：<a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub：<a href="https://github.com/BenRen08">@BenRen08</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> 你的名字 — 简易个人网站</p>
+    </div>
+  </footer>
+
+  <script>
+    // 自动填充年份
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
